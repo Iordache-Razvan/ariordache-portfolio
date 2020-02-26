@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+   
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  body{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.8rem;
+    font-weight: 00;
+    line-height: 1.4;
+    background:#1D1D1D;
+  }
+
+  h1,h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+
+/* nav */
+/*NAV ITEMS*/
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:40px;
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  background-color:#181818;   
+  position: fixed;
+  z-index: 400;
+}
+.nav-items{
+  display: flex;
+  margin-right: 0px;
+  list-style: none;
+}
+.nav-items li{
+  color: #515152;
+  font-size: 20px;
+  margin: 0 24px;
+}
+.nav-links{
+  text-decoration: none;
+  color: #515152;
+}
+.nav-links:hover{
+  color: #08fdd8;
+}
+.first{
+  color:#08fdd8;
+  font-size: 22px;
+}
+
+
+/*NAV ITEMS*/
+ 
+ 
+ /* Welcome section */
+
+
+
+
+
+ /*Projects-section*/
+
+  .projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background:#1D1D1D;
+  }
+
+  .projects-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    padding-top: 165px;
+    border-bottom: 0.2rem solid var(--main-white);
+    color: whitesmoke;
+
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+  @media (max-width: 28.75em) {
+    .projects-header {
+      font-size: 4rem;
+    }
+    .funny-grid{
+      display: none;
+    }
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top:100px;
+  }
+
+  @media (max-width: 30.625em) {
+    .projects {
+      padding: 6rem 1rem;
+      background-color:#E79A58;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+
+
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .project-image:hover{
+    transform: scale(1.1);
+    filter:drop-shadow(8px 8px 10px black);
+  }
+
+  .project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: #08fdd8;
+    font-weight: 600;
+    text-align:center;
+  }
+
+  #projects{
+      
+      background-color: rgb(51, 71, 119);
+      padding-bottom: 20px;
+      max-width: 100%;
+      
+      
+    
+    
+  
+  }
+  .funny-grid{
+    position: absolute;
+    top:70px;
+    left: 60px;
+    font-family: 'La Belle Aurore', cursive;
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  
+  /*Contact me- section*/
+
+
+
+
+
+  #contact{
+      height: 100vh;
+      color:white;
+  }
+
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+
+  .btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+  }
+
+  .btn-show-all:hover {
+    background: var(--main-red);
+  }
+
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  .contact-details{
+    cursor: pointer;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+  }
+
+  .contact-section-header > h2 {
+    font-size: 6rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    margin-right:14px;
+  }
+
+  @media (max-width: 28.75em) {
+    .contact-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+
+
+  .contact-links {
+    color:#08fdd8;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    font-size: 2.4rem;
+    
+    transition: transform 0.3s ease-out;
+  }
+
+  .contact-details:hover {
+    transform: translateY(8px);
+
+  }
+  
+  /*Contact-form*/
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Raleway', sans-serif;
+
+  }
+  
+  input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color: #08fdd8;
+    color: black;
+  }
+  
+  
+  .closeBtn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  .closeBtn:hover{
+    transform: scale(1.2);
+    color: black;
+    cursor: pointer;
+  }
+  .contact-nav:hover{
+    cursor: pointer;
+    color: #08fdd8;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: rgb(51, 71, 119);
+    padding: 20px;
+    z-index: 900;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 2px 2px 20px black;
+    z-index: 999;
+    display: block;
+    color: white;
+  }
+
+  /*
+  .contact-overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: none;
+  }
